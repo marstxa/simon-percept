@@ -47,25 +47,6 @@ Install and configure Tailwind CSS and DaisyUI by following their docs for the v
 npm run dev
 ```
 
-## Project structure
-
-```
-src/
-├── main.tsx
-├── index.css            # Tailwind + DaisyUI setup
-├── App.tsx              # screen flow: welcome, intro, stage, summary, results
-└── simon/
-    ├── SimonStage.tsx   # the game itself (sequence playback, input, recording)
-    ├── DataPanel.tsx    # gathered-data panel with the four charts
-    ├── ChartCanvas.tsx  # small Chart.js wrapper
-    ├── analysis.ts      # aggregates sessions into chart data
-    ├── config.ts        # stage settings, colours and intro texts
-    ├── types.ts         # shared TypeScript types
-    ├── audio.ts         # Web Audio beeps
-    ├── storage.ts       # localStorage load, save and clear
-    └── exportData.ts    # CSV and JSON export and file download
-```
-
 ## Configuration
 
 Stage difficulty lives in `src/simon/config.ts`:
